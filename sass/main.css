@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-image: url("../images/bg-intro-desktop.png");
+}
+
+body::before {
+  content: '';
+  background-color: #ff1414;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: .55;
+  z-index: -99999;
+}
+
+@media screen and (max-width: 576px) {
+  body {
+    background-image: url("../images/bg-intro-mobile.png");
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #ff7a7a;
+  color: white;
+}
+
+footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+footer .attribution a {
+  color: #3e52a3;
+}
+
+@media screen and (max-width: 576px) {
+  footer {
+    position: relative;
+  }
+}
+
+.center {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  margin-top: 15vh;
+}
+
+@media screen and (max-width: 576px) {
+  .center {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    margin-top: 5vh;
+  }
+}
+
+.center article {
+  color: white;
+  width: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.center article .txt {
+  width: 80%;
+}
+
+@media screen and (max-width: 576px) {
+  .center article .txt {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.center article .txt h1 {
+  font-weight: 700;
+  font-size: 3em;
+  line-height: 1em;
+}
+
+@media screen and (max-width: 576px) {
+  .center article .txt h1 {
+    font-size: 2em;
+  }
+}
+
+.center article .txt p {
+  font-weight: 600;
+  font-size: 1em;
+}
+
+@media screen and (max-width: 576px) {
+  .center article .txt p {
+    font-size: 1.2em;
+  }
+}
+
+.center header {
+  width: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.center header .kotak {
+  width: 65%;
+  margin: auto;
+  background-color: #6055a5;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: 500;
+  -webkit-box-shadow: 0 8px 0 rgba(62, 60, 73, 0.2);
+          box-shadow: 0 8px 0 rgba(62, 60, 73, 0.2);
+  margin-bottom: 1.5em;
+  padding: 0 2em;
+}
+
+.center header .kotak p {
+  color: #b9b6d3;
+}
+
+.center header .kotak a {
+  text-decoration: none;
+  color: white;
+  cursor: auto;
+}
+
+@media screen and (max-width: 576px) {
+  .center header .kotak {
+    width: 75%;
+  }
+}
+
+.center header form {
+  width: 65%;
+  margin: auto;
+  background-color: white;
+  text-align: center;
+  border-radius: 10px;
+  padding: 2em;
+}
+
+@media screen and (max-width: 576px) {
+  .center header form {
+    padding: 1.5em;
+    width: 75%;
+  }
+}
+
+.center header form input {
+  width: 90%;
+  margin-bottom: 1em;
+  padding: 1em 1em;
+  border-radius: 8px;
+  border: none;
+  border: 1px solid #6055a5;
+  color: #6055a5;
+  font-weight: 600;
+  font-size: .9em;
+}
+
+.center header form button {
+  width: 100%;
+  padding: 1em 0;
+  color: white;
+  background-color: #38cc8c;
+  border: none;
+  border-radius: 7px;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.center header form p {
+  margin-top: 2em;
+  font-size: .7em;
+  font-weight: 400;
+}
+
+.center header form p a {
+  text-decoration: none;
+  color: #ff7a7a;
+}
+/*# sourceMappingURL=main.css.map */

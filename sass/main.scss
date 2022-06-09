@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+$primary-Color: hsl(0, 100%, 74%);
+$second-Color: hsl(154, 59%, 51%);
+$text: hsl(246, 25%, 77%);
+$btn: hsl(248, 32%, 49%);
+$border: hsl(249, 10%, 26%);
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url("../images/bg-intro-desktop.png");
+
+    &::before {
+        content: '';
+        background-color: darken($primary-Color, $amount: 20);
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        opacity: .55;
+        z-index: -99999;
+    }
+
+    @media screen and (max-width: 576px) {
+        background-image: url("../images/bg-intro-mobile.png");
+    }
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: $primary-Color;
+    color: white;
+
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+    }
+
+    @media screen and (max-width: 576px) {
+        position: relative;
+    }
+}
+
+.center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 15vh;
+
+    @media screen and (max-width: 576px) {
+        grid-template-columns: 1fr;
+        margin-top: 5vh;
+    }
+
+    article {
+        color: white;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+
+        .txt {
+            width: 80%;
+
+            @media screen and (max-width: 576px) {
+                width: 100%;
+                text-align: center;
+            }
+
+            h1 {
+                font-weight: 700;
+                font-size: 3em;
+                line-height: 1em;
+
+                @media screen and (max-width: 576px) {
+                    font-size: 2em;
+                }
+            }
+
+            p {
+                font-weight: 600;
+                font-size: 1em;
+
+                @media screen and (max-width: 576px) {
+                    font-size: 1.2em;
+                }
+            }
+        }
+    }
+
+    header {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .kotak {
+            width: 65%;
+            margin: auto;
+            background-color: $btn;
+            text-align: center;
+            border-radius: 10px;
+            font-weight: 500;
+            box-shadow: 0 8px 0 rgba($border, $alpha: .2);
+            margin-bottom: 1.5em;
+            padding: 0 2em;
+
+            p {
+                color: $text;
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
+                cursor: auto;
+            }
+
+            @media screen and (max-width: 576px) {
+                width: 75%;
+            }
+        }
+
+        form {
+            width: 65%;
+            margin: auto;
+            background-color: white;
+            text-align: center;
+            border-radius: 10px;
+            padding: 2em;
+
+            @media screen and (max-width: 576px) {
+                padding: 1.5em;
+                width: 75%;
+            }
+
+            input {
+                width: 90%;
+                margin-bottom: 1em;
+                padding: 1em 1em;
+                border-radius: 8px;
+                border: none;
+                border: 1px solid $btn;
+                color: $btn;
+                font-weight: 600;
+                font-size: .9em;
+            }
+
+            button {
+                width: 100%;
+                padding: 1em 0;
+                color: white;
+                background-color: $second-Color;
+                border: none;
+                border-radius: 7px;
+                font-size: 1em;
+                font-weight: 500;
+            }
+
+            p {
+                margin-top: 2em;
+                font-size: .7em;
+                font-weight: 400;
+
+                a {
+                    text-decoration: none;
+                    color: $primary-Color;
+                }
+            }
+        }
+    }
+}
